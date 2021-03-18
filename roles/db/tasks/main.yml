@@ -47,5 +47,3 @@
 - name: Create the Application user for the database
   mysql_user: name={{ dbuser }} password={{ upassword }} priv='*.*:ALL' host='%' state=present
     
-- name: Enable the firewall port for MySQL
-  firewalld: port={{ mysql_port }}/tcp permanent=true state=enabled immediate=yes
