@@ -17,7 +17,7 @@ ansible_become_method=su
 172.17.0.6
 
 [dbservers:vars]
-ansible_user=vijeta
+ansible_user=root
 ansible_password=qwerty
 ansible_become_user=root
 ansible_become_password=qwerty
